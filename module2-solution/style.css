@@ -6,11 +6,11 @@
 }
 
 body{
-    background-color: black;
+    background-color: navajowhite;
 }
 
 h1{
-    color: white;
+
     text-align: center;
     font-weight: bold;
     margin: 50px;
@@ -37,7 +37,7 @@ p{
 }
 
 .box{
-    border: 1px dotted black;
+    border: 1px solid black;
     margin: 3px;
     background-color: lightgray;
     position: relative;
@@ -46,7 +46,7 @@ p{
 }
 
 .title1{
-    background-color: orangered;
+    background-color: #d85151;
     border: 1px solid black;
     width: 100px;
     font-weight: bold;
@@ -95,7 +95,7 @@ p{
         width: 48.5%;
     }
     .special{
-        width: 98.2%;
+        width: 98%;
     }
     
 }
