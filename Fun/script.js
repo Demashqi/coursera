@@ -2,7 +2,7 @@ const html = document.documentElement;
 const canvas = document.getElementById("hero-lightpass");
 const context = canvas.getContext("2d");
 
-const frameCount = 148;
+const frameCount = 50;
 const currentFrame = index => (
   `Images/frame-${index.toString().padStart(2, '0')}.jpg`
 )

@@ -1,17 +1,22 @@
-html {
-  height: 100vh;
-}
-
 body {
   height: 500vh;
   background: #000;
 }
-
+.container{
+  position: relative;
+  height: 100vh;
+}
 canvas {
-  position: fixed;
+  position: absolute;
+  animation-fill-mode: ;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   max-width: 100vw;
   max-height: 100vh;
+
+}
+
+h1 , p{
+  color: white;
 }
