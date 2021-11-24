@@ -40,6 +40,8 @@ window['_fs_namespace'] = 'FS';
 	<meta charset="utf-8">
 	<title>Demashqi</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon --> 
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
@@ -48,7 +50,7 @@ window['_fs_namespace'] = 'FS';
 
 
 
-	<style>
+	<!-- <style>
 	*{
 		margin: 0px;
 		padding: 0px;
@@ -86,10 +88,10 @@ window['_fs_namespace'] = 'FS';
 			margin-top: 10px;
 			margin-bottom: 10px;
 		}
-	</style>
+	</style> -->
 </head>
 <body>
-<h1>List of all my projects!</h1>
+<!-- <h1>List of all my projects!</h1>
 
 <div class="container">	
 	<ul>
@@ -105,7 +107,28 @@ window['_fs_namespace'] = 'FS';
 
 
 	</ul>
-</div>
+</div> -->
+
+<div id="tripetto"></div>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-foundation"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-runner-chat"></script>
+<script src="https://cdn.jsdelivr.net/npm/tripetto-services"></script>
+<script>
+var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiVk9SL0JudkRHMEF4RGM0MFRMc01WVG12TzBBZXhqNnp3WXlwQXkxaVl1dz0iLCJkZWZpbml0aW9uIjoiVVEvd2h2MkdaWCtVbTFjeHZjN3FDUlpySVcrTGhtU2g5UUZjbzIyKzMwND0iLCJ0eXBlIjoiY29sbGVjdCJ9.dy04mgJoKKg8YF7cLCTYtPGDHZvG6SZ-tfm8fbew-yM" });
+
+TripettoChat.run({
+    element: document.getElementById("tripetto"),
+    definition: tripetto.definition,
+    styles: tripetto.styles,
+    l10n: tripetto.l10n,
+    locale: tripetto.locale,
+    translations: tripetto.translations,
+    attachments: tripetto.attachments,
+    onSubmit: tripetto.onSubmit,
+    snapshot: tripetto.snapshot,
+    onPause: tripetto.onPause
+});
+</script>
 
 
 </body>
